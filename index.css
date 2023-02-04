@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: "PT Sans", Tahoma, Calibri, sans-serif;
+    font-size: 16pt;
 }
 
 :root {
@@ -27,7 +28,7 @@
 
 .imgBackground {
     width: 100%;
-    height: 25vh;
+    height: 8em;
     object-fit: cover;
     position: absolute;
     z-index: -2;
@@ -41,20 +42,19 @@
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    top: 50px;
-    width:30%;
+    top: 1em;
+    width:12em;
     align-items: center;
     background-color: var(--sublight-color);
-    border: 5px solid var(--strong-color);
-    border-radius: 8px;
+    border: .15em solid var(--strong-color);
+    border-radius: 0.3em;
     color: var(--dark-color);
     display: flex;
     font-size: 1.5em;
-    height: 50px;
+    height: 1.5em;
     justify-content: center;
-    line-height: 24px;
-/*    max-width: 100%;*/
-    padding: 0 25px;
+    line-height: 0.9em;
+    padding: 0 0.75em;
     text-align: center;
     text-decoration: none;
     user-select: none;
@@ -63,12 +63,12 @@
 }
 
 .photo {
-    position: absolute; 
-    right: 40px; 
-    top: 20px;
-    width:300px;
-    height:300px;
-    border: 5px solid var(--sublight-color);
+    position: absolute;
+    right: 1.2em;
+    top: 0.6em;
+    width: 9em;
+    height: 9em;
+    border: 0.15em solid var(--strong-color);
     border-radius: 50%;
     object-fit: cover;
     background-image: url("./source/photo.jpg");
@@ -78,18 +78,18 @@
 button {
     align-items: center;
     background-color: var(--main-color);
-    border: 2px solid var(--strong-color);
-    border-radius: 8px;
+    border: 0.16em solid var(--strong-color);
+    border-radius: 0.5em;
     color: var(--sublight-color);
     cursor: pointer;
     display: flex;
-    font-size: 1em;
-    height: 32px;
+    font-size: 0.75em;
+    height: 2.1em;
     justify-content: center;
-    line-height: 24px;
+    line-height: 0.75em;
 /*    max-width: 100%;*/
-    width:20%;
-    padding: 0 25px;
+    width:9em;
+    padding: 0 0.75em;
     position: relative;
     text-align: center;
     text-decoration: none;
@@ -100,15 +100,15 @@ button {
 
 button:after {
     background-color: var(--strong-color);
-    border-radius: 8px;
+    border-radius: 0.5em;
     content: "";
     display: block;
-    height: 32px;
+    height: 2.1em;
     left: 0;
     width: 100%;
     position: absolute;
-    top: -2px;
-    transform: translate(8px, 8px);
+    top: -0.16em;
+    transform: translate(0.5em, 0.5em);
     transition: transform .2s ease-out;
     z-index: -1;
 }
@@ -139,8 +139,8 @@ button:hover {
     var(--strong-color) 0%,
     var(--sublight-color) 100%
     );
-    width: 200px;
-    height: 200px;
+    width: 9em;
+    height: 9em;
     border: none;
     -moz-border-radius: 0 100% 0 0;
     -webkit-border-radius: 0 100% 0 0;
@@ -157,20 +157,20 @@ button:hover {
         height: 0px;
     }
     50%{
-        width: 100px;
-        height: 100px;
+        width: 4.5em;
+        height: 4.5em;
     }
     100%{
-        width: 200px;
-        height: 200px;
+        width: 9em;
+        height: 9em;
     }
 
 }
 
 .menu1 {
     position: absolute;
-    top: 30px;
-    left: 110px;
+    top: 1.85em;
+    left: 6.8em;
     animation: animMenu1;
     animation-duration: 3.2s;
     animation-delay: 0.5s;
@@ -179,43 +179,43 @@ button:hover {
 
 @keyframes animMenu1 {
     0%{
-        top: -40px;
-        left: 140px;
+        top: -2.5em;
+        left: 8.7em;
     }
     84%{
-        top: -40px;
-        left: 140px;
+        top: -2.5em;
+        left: 8.7em;
     }
     87%{
-        top: -28px;
-        left: 135px;
+        top: -1.7em;
+        left: 8.4em;
     }
     90%{
-        top: -16px;
-        left: 130px;
+        top: -1em;
+        left: 8em;
     }
     93%{
-        top: -4px;
-        left: 125px;
+        top: -0.3em;
+        left: 7.8em;
     }
     95%{
-        top: 8px;
-        left: 120px;
+        top: 0.5em;
+        left: 7.5em;
     }
     98%{
-        top: 20px;
-        left: 115px;
+        top: 1.2em;
+        left: 7.1em;
     }
     100%{
-        top: 30px;
-        left: 110px;
+        top: 1.85em;
+        left: 6.8em;
     }
 }
 
 .menu2 {
     position: absolute;
-    top: 75px;
-    left: 70px;
+    top: 4.7em;
+    left: 4.4em;
     animation: animMenu2;
     animation-duration: 2.7s;
     animation-delay: 0.5s;
@@ -224,54 +224,54 @@ button:hover {
 
 @keyframes animMenu2 {
     0%{
-        top: -40px;
-        left: 110px;
+        top: -2.5em;
+        left: 6.9em;
     }
     74%{
-        top: -40px;
-        left: 110px;
+        top: -2.5em;
+        left: 6.9em;
     }
     77%{
-        top: 3px;
-        left: 102px;
+        top: 0.2em;
+        left: 6.4em;
     }
     80%{
-        top: 12px;
-        left: 98px;
+        top: 0.75em;
+        left: 6.12em;
     }
     83%{
-        top: 21px;
-        left: 94px;
+        top: 1.32em;
+        left: 5.9em;
     }
     86%{
-        top: 30px;
-        left: 90px;
+        top: 1.875em;
+        left: 5.625em;
     }
     89%{
-        top: 39px;
-        left: 86px;
+        top: 2.43em;
+        left: 5.37em;
     }
     92%{
-        top: 48px;
-        left: 82px;
+        top: 3em;
+        left: 5.125em;
     }
     95%{
-        top: 57px;
-        left: 78px;
+        top: 3.56em;
+        left: 4.87em;
     }
     97%{
-        top: 66px;
-        left: 74px;
+        top: 4.1em;
+        left: 4.625em;
     }
     100%{
-        top: 75px;
-        left: 70px;
+        top: 4.7em;
+        left: 4.4em;
     }
 }
 .menu3 {
     position: absolute;
-    top: 120px;
-    left: 30px;
+    top: 7.5em;
+    left: 1.875em;
     animation: animMenu3;
     animation-duration: 2s;
     animation-delay: 0.5s;
@@ -280,56 +280,75 @@ button:hover {
 
 @keyframes animMenu3 {
     0%{
-        top: -40px;
-        left: 110px;
+        top: -2.5em;
+        left: 6.9em;
     }
     50%{
-        top: -40px;
-        left: 110px;
+        top: -2.5em;
+        left: 6.9em;
     }
     60%{
-        top: 25px;
-        left: 86px;
+        top: 1.56em;
+        left: 5.37em;
     }
     70%{
-        top: 51px;
-        left: 70px;
+        top: 3.19em;
+        left: 4.37em;
     }
     80%{
-        top: 77px;
-        left: 56px;
+        top: 4.81em;
+        left: 3.5em;
     }
     90%{
-        top: 104px;
-        left: 40px;
+        top: 6.5em;
+        left: 2.5em;
     }
     100%{
-        top: 120px;
-        left: 30px;
+        top: 7.5em;
+        left: 1.875em;
     }
 }
 
 @media only screen and (max-width: 900px) {
-    .container {
-        background-color: var(--dark-color);
-    }
-    .corner{
-        width: 120px;
-        height: 120px;
-    }
-    .name{
-        font-size: 1em;
-    }
-    button{
-        font-size: 10pt;
-        width: 140px;
-        padding: 0px;
-    }
-    .photo{
-        right: 5px; 
-        top: 5px;
-        width:150px;
-        height:150px;
+    *{
+        font-size: 12pt;
     }
 
+    .name{
+        font-size: 1.2em;
+        width: 10em;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    *{
+        font-size: 11pt;
+    }
+
+    .name{
+        font-size: 9pt;
+        top: 9.8em;
+        right: 2em;
+        margin-right: 0;
+        z-index: 2;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    *{
+        font-size: 10pt;
+    }
+
+    .photo{
+        right: 0.6em;
+    }
+
+    .name{
+        font-size: 9pt;
+        top: 8.8em;
+        right: 0.8em;
+        margin-right: 0;
+        z-index: 2;
+    }
 }
