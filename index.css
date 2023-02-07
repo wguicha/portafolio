@@ -14,11 +14,6 @@
     --strong-color: #4B0C28;
 }
 
-#prueba {
-    top: 200px;
-    left: 300px;
-}
-
 .container {
     position: absolute;
     width: 100%;
@@ -116,7 +111,7 @@ button:after {
     top: -0.16em;
     transform: translate(0.5em, 0.5em);
     transition: transform .2s ease-out;
-    z-index: -1;
+    z-index: -2;
 }
 
 button:hover:after {
@@ -173,7 +168,7 @@ button:hover {
 
 }
 
-.menu1 {
+#menu1-1 {
     position: absolute;
     top: 1.85em;
     left: 6.8em;
@@ -218,7 +213,7 @@ button:hover {
     }
 }
 
-.menu2 {
+#menu1-2 {
     position: absolute;
     top: 4.7em;
     left: 4.4em;
@@ -274,7 +269,7 @@ button:hover {
         left: 4.4em;
     }
 }
-.menu3 {
+#menu1-3 {
     position: absolute;
     top: 7.5em;
     left: 1.875em;
@@ -315,6 +310,62 @@ button:hover {
     }
 }
 
+.bar2 {
+    display: inline-block;
+
+}
+
+.imgBackground2 {
+    position: fixed;
+    width: 100%;
+    height: 3em;
+    top: 5em;
+    object-fit: cover;
+    z-index: -2;
+    opacity: 0.7;
+}
+
+.menu2 {
+    position: fixed;
+    top: 7.4em;
+    color: var(--sublight-color);
+    font-size: 12.5pt;
+}
+
+#menu2-1 {
+    top: 7.7em;
+    left: 15em;
+}
+
+#menu2-2 {
+    top: 7.7em;
+    left: 8em;
+}
+
+#menu2-3 {
+    top: 7.7em;
+    left: 1em;
+}
+
+#name2 {
+    position: fixed;
+    top: 5.7em;
+    left: 21em;
+    width:12em;
+    align-items: center;
+    background-color: var(--sublight-color);
+    border: .15em solid var(--strong-color);
+    border-radius: 0.3em;
+    color: var(--dark-color);
+    display: flex;
+    font-weight: bold;
+    height: 1.5em;
+    justify-content: center;
+    padding: 0 0.75em;
+    text-align: center;
+    text-decoration: none;
+}
+
 @media only screen and (max-width: 900px) {
     *{
         font-size: 12pt;
@@ -322,6 +373,10 @@ button:hover {
 
     .name{
         font-size: 1.2em;
+    }
+
+    .menu2{
+        font-size: 10pt;
     }
 
 }
@@ -337,6 +392,14 @@ button:hover {
         right: 1.2em;
         margin-right: 0;
         z-index: 2;
+    }
+
+    .menu2{
+        font-size: 9pt;
+    }
+
+    #name2 {
+        display: none;
     }
 }
 
@@ -356,4 +419,12 @@ button:hover {
         margin-right: 0;
         z-index: 2;
     }
+
+    .menu2{
+        font-size: 8pt;
+    }
+    #name2 {
+        display: none;
+    }   
+
 }

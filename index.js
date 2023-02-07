@@ -6,7 +6,6 @@ window.addEventListener('scroll', function(){
     console.log(posMenu1 < 5);
     if (posMenu1 < 5){
         console.log('Aqui Estoy....');
-        animateMenu1.style.left = '50em';
     }
 
 })
