@@ -52,7 +52,7 @@
     display: flex;
     font-size: 1.5em;
     font-weight: bold;
-    height: 1.5em;
+    height: 1.8em;
     justify-content: center;
     line-height: 0.9em;
     padding: 0 0.75em;
@@ -311,7 +311,7 @@ button:hover {
 }
 
 .bar2 {
-    display: inline-block;
+    display: none;
 
 }
 
@@ -319,7 +319,7 @@ button:hover {
     position: fixed;
     width: 100%;
     height: 3em;
-    top: 5em;
+    top: 0;
     object-fit: cover;
     z-index: -2;
     opacity: 0.7;
@@ -327,31 +327,48 @@ button:hover {
 
 .menu2 {
     position: fixed;
-    top: 7.4em;
     color: var(--sublight-color);
     font-size: 12.5pt;
+    align-items: center;
+    background-color: var(--main-color);
+    border: 0.16em solid var(--strong-color);
+    border-radius: 0.5em;
+    cursor: pointer;
+    display: flex;
+    font-size: 0.75em;
+    height: 2.1em;
+    justify-content: center;
+    line-height: 0.75em;
+    width:8em;
+    padding: 0 0;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
 }
 
 #menu2-1 {
-    top: 7.7em;
-    left: 15em;
+    top: 1.3em;
+    left: 18em;
 }
 
 #menu2-2 {
-    top: 7.7em;
-    left: 8em;
+    top: 1.3em;
+    left: 9.5em;
 }
 
 #menu2-3 {
-    top: 7.7em;
+    top: 1.3em;
     left: 1em;
 }
 
 #name2 {
     position: fixed;
-    top: 5.7em;
-    left: 21em;
+    top: 7.9em;
+    right: .9em;
     width:12em;
+    font-size: 10pt;
     align-items: center;
     background-color: var(--sublight-color);
     border: .15em solid var(--strong-color);
@@ -359,11 +376,26 @@ button:hover {
     color: var(--dark-color);
     display: flex;
     font-weight: bold;
-    height: 1.5em;
+    height: 1.8em;
     justify-content: center;
     padding: 0 0.75em;
     text-align: center;
     text-decoration: none;
+    z-index: -1;
+}
+
+.photo2 {
+    position: fixed;
+    right: 1.2em;
+    top: 0.3em;
+    width: 6em;
+    height: 6em;
+    border: 0.15em solid var(--strong-color);
+    border-radius: 50%;
+    object-fit: cover;
+    background-image: url("./source/photo.jpg");
+    background-color: var(--main-color);
+    z-index: -2;
 }
 
 @media only screen and (max-width: 900px) {
@@ -372,11 +404,18 @@ button:hover {
     }
 
     .name{
-        font-size: 1.2em;
+        font-size: 1.5em;
     }
 
     .menu2{
         font-size: 10pt;
+    }
+
+    #name2 {
+        top: 7.9em;
+        right: .8em;
+        width:12em;
+        font-size: 7.5pt;
     }
 
 }
@@ -388,7 +427,7 @@ button:hover {
 
     .name{
         font-size: 9pt;
-        top: 9.8em;
+        top: 9.4em;
         right: 1.2em;
         margin-right: 0;
         z-index: 2;
@@ -399,7 +438,16 @@ button:hover {
     }
 
     #name2 {
-        display: none;
+        top: 7.9em;
+        right: .8em;
+        width:12em;
+        font-size: 6.8pt;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .menu2{
+        font-size: 7pt;
     }
 }
 
@@ -414,17 +462,20 @@ button:hover {
 
     .name{
         font-size: 9pt;
-        top: 8.8em;
+        top: 8.5em;
         right: 0.2em;
         margin-right: 0;
         z-index: 2;
     }
 
     .menu2{
-        font-size: 8pt;
+        font-size: 6pt;
     }
     #name2 {
-        display: none;
+        top: 7.9em;
+        right: .8em;
+        width:12em;
+        font-size: 6.2pt;
     }   
 
 }
