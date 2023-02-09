@@ -45,7 +45,7 @@
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    top: 1em;
+    top: 3.8em;
     width:12em;
     align-items: center;
     background-color: var(--strong-color);
@@ -112,7 +112,7 @@ button:after {
     border-radius: 0.5em;
     content: "";
     display: block;
-    height: 2.2 em;
+    height: 2.2em;
     left: 0;
     width: 105%;
     position: absolute;
@@ -187,11 +187,11 @@ button:hover {
 
 @keyframes animMenu1 {
     0%{
-        top: -2.5em;
+        top: -2.7em;
         left: 8.7em;
     }
     84%{
-        top: -2.5em;
+        top: -2.7em;
         left: 8.7em;
     }
     87%{
@@ -232,11 +232,11 @@ button:hover {
 
 @keyframes animMenu2 {
     0%{
-        top: -2.5em;
+        top: -2.7em;
         left: 6.9em;
     }
     74%{
-        top: -2.5em;
+        top: -2.7em;
         left: 6.9em;
     }
     77%{
@@ -288,11 +288,11 @@ button:hover {
 
 @keyframes animMenu3 {
     0%{
-        top: -2.5em;
+        top: -2.7em;
         left: 6.9em;
     }
     50%{
-        top: -2.5em;
+        top: -2.7em;
         left: 6.9em;
     }
     60%{
@@ -386,7 +386,7 @@ button:hover {
     font-family: var(--font-main);
     align-items: center;
     background-color: var(--strong-color);
-    border: .15em solid var(--strong-color);
+    border: .15em solid var(--focus-color);
     border-radius: 0.3em;
     color: var(--sublight-color);
     display: flex;
@@ -500,6 +500,6 @@ li {
         right: .8em;
         width:12em;
         font-size: 6.2pt;
-    }   
+    }
 
 }
